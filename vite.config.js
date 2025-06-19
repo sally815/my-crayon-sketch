@@ -1,9 +1,10 @@
 import { resolve } from 'path'
+
 const isCodeSandbox = 'SANDBOX_URL' in process.env || 'CODESANDBOX_HOST' in process.env
 
 export default {
-  root: 'src/',
-  publicDir: '../static/',
+  root: './',
+  publicDir: './static/',
   base: './',
   server: {
     host: true,
@@ -11,13 +12,13 @@ export default {
     port: 8899,
   },
   build: {
-    outDir: '../dist',
+    outDir: 'dist',
     emptyOutDir: true,
     sourcemap: true,
     rollupOptions: {
       input: {
-        index: resolve(__dirname, 'src/index.html'),
+        index: resolve(__dirname, 'index.html'),
       },
     },
-  }
+  },
 }

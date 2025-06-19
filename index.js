@@ -1,6 +1,4 @@
-import '../../styles/index.scss';
-import '../../styles/pages/index.scss';
-import CanvasManager from '../components/canvas-manager';
+
 
 export default class Index {
   constructor() {
